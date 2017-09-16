@@ -1,6 +1,7 @@
 var db = require('../dbconfig.js');
 var Sequelize = require('sequelize');
 
+console.log("here in database")
 var Todo = db.define('article', {
 	todo: Sequelize.TEXT
 });
