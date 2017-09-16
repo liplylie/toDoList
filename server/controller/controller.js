@@ -19,9 +19,9 @@ module.exports = {
 	postTodo: function(req, res){
 		console.log("here in post")
 		ToDoModel.create({
-			todo: req.body.todo
+			todo: "just a test",
 		}).then( (todo) => {
-	      res.status(201).send(todo)
+	      res.status(201).send(JSON.stringify(todo))
 	    })
 	    .catch( () => {
 	      res.status(404)

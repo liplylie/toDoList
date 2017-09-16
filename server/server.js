@@ -19,7 +19,7 @@ app
     .use(bodyParser.urlencoded({ extended: true }))
     .use(morgan('dev'))
     .use(router);
-
+app.use(express.static('client'))
 
 
 
