@@ -18,7 +18,7 @@ app
     .use(bodyParser.json())
     .use(bodyParser.urlencoded({ extended: true }))
     .use(morgan('dev'))
-    .use(router);
+    .use('/api',router);
 app.use(express.static('client'))
 
 
